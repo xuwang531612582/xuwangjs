@@ -6,10 +6,10 @@
 var $ = jQuery.noConflict();
 (function () {
 
-    function Login() {
-        this.showLogin();
+    function Login(success) {
+        this.showLogin(success);
     }
-    Login.prototype.showLogin = function () {
+    Login.prototype.showLogin = function (success) {
         var loginContainer = $("<div class='loginContainer'></div>");
         var closeButton = $("<p>关闭</p>");
         var usernameInput = $("<p><input type='text' placeholder='用户名'></p>");
@@ -29,23 +29,26 @@ var $ = jQuery.noConflict();
 		closeButton.css({
 			float:"right",
 			color:"white",
-			padding:"5px"
+			padding:"5px",
+			cursor:"pointer"
 		})
 		closeButton.click(function(){
-			loginContainer.css("display","none");
-//			loginContainer.fadeOut(500,function(){
-//			loginContainer.remove();
-//			});
+//			loginContainer.css("display","none");
+			loginContainer.fadeOut(500,function(){
+			loginContainer.remove();
+			});
 		});
 		loginButton.click(function(){
 			$.post(
-				PRODUCT_HOST+LOGIN,
-				{status:"Login",username:usernameInput.children().val(),password:passwordInput.children().val()},
+				PRODUCT_HOST+LOGIN,//qq321   111111     register注册
+				{status:"login",username:usernameInput.children().val(),password:passwordInput.children().val()},
 				function(data){
 					console.log(data);
 					if(data.code==0){
 						loginContainer.fadeOut(500,function(){
 						loginContainer.remove();
+						
+						success(data.data);
 						});	
 						
 						//todo:执行外面传入的   方法
@@ -54,7 +57,7 @@ var $ = jQuery.noConflict();
 					}
 				});
 		});
-		
+				
 		var inputcss = {
 			padding:"20px 0",
 			width:"300px",
