@@ -1,0 +1,39 @@
+.header-top-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header-top-home{
+    float: left;
+}
+
+
+
+.header-top a{
+	line-height:40px;
+	color:#333;
+}
+.header-top .header-top-login{
+	color:red;
+}
+
+.header-top-menu{
+    float: right;
+}
+.header-top-container:after{
+    display: block;
+    content:'';
+    clear: both;
+}
+
+
+
+.header-top-menu li{
+	float:left;
+	padding-left:22px;
+}
+
+.header-top{
+    height: 40px;
+    background-color:#f8f8f8;
+    border-bottom: 1px #ebebeb solid;
+}
