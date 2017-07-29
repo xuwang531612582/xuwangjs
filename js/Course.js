@@ -115,7 +115,7 @@ window.corouselView = window.corouselView||{};
      * */
     Corouse.prototype.updataPage = function () {
         var lastPage = $("#"+this.backgroundView.attr("id")+" .imageView");
-        console.log(lastPage);
+//      console.log(lastPage);
         lastPage.remove();
         this.backgroundView.append(this.getSingleViews()[this.pageIndex]);
     };
