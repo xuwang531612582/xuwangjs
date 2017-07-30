@@ -1,0 +1,111 @@
+.detailContainer{
+    border-top:2px solid red;
+    border-bottom:2px solid red;
+    padding:40px 0;
+    margin:0 auto;
+    width:1000px;
+   margin-top:20px;
+}
+
+.btn2,.btn{
+    margin-top:110px;
+    padding:10px 20px;
+    background:red;
+    text-align:center;
+    outline:none;
+    border:0;
+    margin-right:20px;
+}
+
+.divright{
+    float:right;
+
+    width:500px;
+    height:437px;
+}
+.img{
+    border:1px solid red;
+}
+.divright h3{
+    font-size:20px;
+    margin:40px 0;
+}
+.divright p{
+    font-size:20px;
+    margin:20px 0 ;
+}
+.divright .pcolor{
+    color:red;
+}
+.divbuttonjj button{
+    padding:11px 15px;
+}
+.divbuttonjj input{
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

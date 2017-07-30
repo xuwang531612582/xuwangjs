@@ -49,7 +49,7 @@ var $ = jQuery.noConflict();
 				PRODUCT_HOST+LOGIN,//qq321   111111     register注册
 				{status:"login",username:usernameInput.children().val(),password:passwordInput.children().val()},
 				function(data){
-					console.log(data);
+					//console.log(data);
 					if(data.code==0){
 						loginContainer.fadeOut(500,function(){
 						loginContainer.remove();

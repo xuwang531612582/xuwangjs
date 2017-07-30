@@ -57,13 +57,13 @@
 		var that = this;
 
 		this.item.click(function(){
-			console.log("#55");
-			console.log(that);
-			console.log(that.goods_id);
+			//console.log("#55");
+			//console.log(that);
+			//console.log(that.goods_id);
 			location.href="spxq.html?goodsID="+that.goods_id;
-		})
+		});
 		return this;
-	}
+	};
 
 	function Good(url,parm,superView,action){
 		
@@ -82,10 +82,10 @@
 	
 	Good.prototype.loadData = function(url,parm,superView,action){
 		$.get(url,parm,function(result){
-			console.log("===================");
-			console.log(this);
+			//console.log("===================");
+			//console.log(this);
 			if(result.code==0){
-				console.log("#33");
+				//console.log("#33");
 				this.showGoodsView(result.data,superView,action);
 				// this.spxqclick(result);
 			}
