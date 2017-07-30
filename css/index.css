@@ -1,0 +1,21 @@
+.main-course-container div{
+	float:left;
+}
+.main-course-container:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.main-course-container,.goods-container{
+	width:1200px;
+	margin: auto;	
+}
+
+.goods-name{
+	width:224px;
+	background:black;
+	color:white;
+}
+/*.goods-container>div:hover .good-name{
+	display:block;
+}*/
